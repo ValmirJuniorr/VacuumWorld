@@ -13,7 +13,7 @@ def prepare_parse():
     # Initialize parser
     parser = argparse.ArgumentParser(description=description)
 
-    parser.add_argument("-n", "--number_of_steps", type=int, help="Number of steps", required=True)
+    parser.add_argument("-n", "--number_of_steps", type=int, help="Number of steps")
     parser.add_argument("-a", "--is_dirty_a", help="Room A is Dirty?")
     parser.add_argument("-b", "--is_dirty_b", help="Room B is Dirty?")
     parser.add_argument("-l", "--agent_location", help="Initial Location Of Agent")
@@ -41,7 +41,7 @@ def get_arguments():
     parser = prepare_parse()
     args = parser.parse_args()
 
-    number_of_steps = args.number_of_steps
+    number_of_steps = args.number_of_steps or 10
     is_dirty_a = parse_boolean_arg('is_dirty_a', args.is_dirty_a) if args.is_dirty_a else random_bool()
     is_dirty_b = parse_boolean_arg('is_dirty_b', args.is_dirty_b) if args.is_dirty_b else random_bool()
     agent_location = parse_boolean_arg('agent_location', args.agent_location) if args.agent_location else random_bool()

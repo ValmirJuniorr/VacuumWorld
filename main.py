@@ -15,8 +15,11 @@ def print_action(environment, action):
 def main():
     arguments = get_arguments()
 
-    environment = Environment(is_dirty_a=arguments['is_dirty_a'], is_dirty_b=arguments['is_dirty_b'],
-                              agent_location=arguments['agent_location'])
+    is_dirty_a = arguments['is_dirty_a']
+    is_dirty_b = arguments['is_dirty_b']
+    agent_location = arguments['agent_location']
+
+    environment = Environment(is_dirty_a, is_dirty_b, agent_location)
     agent = Agent()
 
     for i in range(arguments['number_of_steps']):
