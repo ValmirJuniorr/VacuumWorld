@@ -1,4 +1,3 @@
-Trabalho, [16.05.21 23:18]
 # Projeto VaccumWorld
 
 ---
@@ -18,7 +17,7 @@ Trabalho, [16.05.21 23:18]
 ## Como executar o projeto
 
 
-bash
+```bash
 # valores boleanos verdadeiros: 
 
 For Truthy Values
@@ -45,12 +44,13 @@ For Falsy values use:
 python main.py -h
 
 
-# Para determinar uma configuração inicial do ambiente, ou seja, qual sala está suja; em que sala o agente está; e também, a quantidade de passos, digite no terminal:
+# Para determinar uma configuração inicial do ambiente, ou seja, qual sala está suja; 
+# em que sala o agente está; e também, a quantidade de passos, digite no terminal:
 
 python main.py -a % -b % -l % -n % 
 
 #substitua cada % por um dos valores boleanos. Apenas em -n %, substitua % por um número inteiro.
-
+```
 
 ---
 ## Dupla
